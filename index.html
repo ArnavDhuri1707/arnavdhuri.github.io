@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Arnav Dhuri — Engineering Portfolio</title>
-  <meta name="description" content="Arnav Dhuri — engineering student building robots and energy systems. Projects, experience, and skills." />
+  <title>Arnav Dhuri — Mechanical Engineering & Energy Systems</title>
+  <meta name="description" content="Arnav Dhuri — mechanical engineering student at Rutgers (energy systems). Robotics, drones, and energy builds — projects, experience, and skills." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="src/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="src/styles.css?v=2" />
 </head>
 <body>
 
@@ -31,18 +31,17 @@
     <!-- ============ HERO ============ -->
     <section class="hero">
       <div class="hero-bg" aria-hidden="true">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
         <div class="grid-overlay"></div>
       </div>
+      <span class="hero-coord" aria-hidden="true">40.5008° N, 74.4474° W — New Brunswick, NJ</span>
       <div class="container hero-inner">
-        <p class="hero-kicker reveal">Hi, I'm</p>
+        <p class="hero-kicker reveal">Mechanical Engineering · Energy Systems · Rutgers ’29</p>
         <h1 class="hero-name reveal">Arnav Dhuri</h1>
-        <p class="hero-role reveal">Engineering student building <span class="accent">robots</span> &amp; <span class="accent">energy systems</span>.</p>
+        <p class="hero-role reveal">I build <span class="accent">robots</span> and <span class="accent">energy systems</span> — the point where code starts moving things in the real world.</p>
         <p class="hero-blurb reveal">
-          <!-- EDIT: one or two sentences about what you're focused on right now -->
-          I design, prototype, and break things until they work — currently exploring
-          robotics, mechatronics, and sustainable energy.
+          Mechanical engineering student at Rutgers, concentrating in energy systems.
+          I lead a reforestation-drone team, prototype robotics, and take things apart
+          until I understand them — CAD, circuits, and firmware included.
         </p>
         <div class="hero-actions reveal">
           <a href="#projects" class="btn btn-primary">View my work</a>
@@ -57,28 +56,30 @@
     <!-- ============ ABOUT ============ -->
     <section class="section" id="about">
       <div class="container">
-        <p class="section-kicker reveal">01 — About</p>
+        <p class="section-kicker reveal">01 / About</p>
         <div class="about-grid">
           <div class="reveal">
-            <h2 class="section-title">Curious by default,<br />hands-on by choice.</h2>
+            <h2 class="section-title">Hands on the<br />hardware.</h2>
           </div>
           <div class="about-text reveal">
-            <!-- EDIT: your real background — school, what you study, what excites you -->
             <p>
-              I'm an engineering student passionate about the intersection of hardware
-              and software — the point where code starts moving things in the real world.
+              I'm a mechanical engineering student at Rutgers University, concentrating in
+              energy systems, and a graduate of Ridge High School in Basking Ridge, NJ.
+              What pulls me in is the intersection of hardware and software — the moment
+              code stops being abstract and starts driving a motor.
             </p>
             <p>
-              Most of my time goes into robotics builds and energy-system experiments:
-              CAD, circuits, firmware, and the occasional 3&nbsp;a.m. debugging session.
-              I care about building things that are reliable, efficient, and genuinely useful.
+              Right now I lead the SEEDR reforestation-drone project, build robotics side
+              projects, and stay busy with student engineering leadership. I care about
+              work that's efficient, reliable, and actually useful — and I'm just as happy
+              in Fusion, in a terminal, or with a soldering iron.
             </p>
             <div class="about-stats">
-              <!-- EDIT: swap these for stats that are true for you -->
-              <div class="stat"><span class="stat-num" data-count="6">0</span><span class="stat-label">Projects built</span></div>
-              <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label">Years tinkering</span></div>
-              <div class="stat"><span class="stat-num" data-count="2">0</span><span class="stat-label">Competitions</span></div>
+              <div class="stat"><span class="stat-num" data-count="4">0</span><span class="stat-label">Builds in flight</span></div>
+              <div class="stat"><span class="stat-num" data-count="6" data-suffix="+">0</span><span class="stat-label">Teammates led on SEEDR</span></div>
+              <div class="stat"><span class="stat-num" data-count="5000" data-suffix="+">0</span><span class="stat-label">Reached at outreach demos</span></div>
             </div>
+            <p class="about-interests">Off the clock: MMA, cooking, Lego builds, and cards.</p>
           </div>
         </div>
       </div>
@@ -87,65 +88,67 @@
     <!-- ============ PROJECTS ============ -->
     <section class="section section-alt" id="projects">
       <div class="container">
-        <p class="section-kicker reveal">02 — Projects</p>
+        <p class="section-kicker reveal">02 / Projects</p>
         <h2 class="section-title reveal">Selected work</h2>
         <div class="project-grid">
 
-          <!-- EDIT: duplicate/remove these cards for your real projects.
-               Drop images into an /assets folder and set the img src. -->
+          <!-- 01 -->
           <article class="project-card reveal">
-            <div class="project-media" data-tone="a">
-              <span class="project-index">01</span>
+            <div class="project-head">
+              <span class="project-index">PROJ.01</span>
+              <span class="status status-built">Built</span>
             </div>
             <div class="project-body">
-              <h3>Autonomous Line-Following Robot</h3>
-              <p>A PID-controlled robot that navigates a track using IR sensor arrays, tuned for speed and stability.</p>
+              <h3>Game-Clock</h3>
+              <p>An arcade-cabinet game clock driven by an Arduino Nano — a MAX7219 dot-matrix display, joystick, and button for control, housed in a 3D-printed arcade-machine enclosure.</p>
               <ul class="tag-row">
-                <li>Arduino</li><li>C++</li><li>PID Control</li>
+                <li>Arduino Nano</li><li>C/C++</li><li>MAX7219 Matrix</li><li>3D Printing</li>
               </ul>
-              <a class="project-link" href="https://github.com/arnavdhuri1707" target="_blank" rel="noreferrer">View project <span class="arrow">→</span></a>
             </div>
           </article>
 
+          <!-- 02 -->
           <article class="project-card reveal">
-            <div class="project-media" data-tone="b">
-              <span class="project-index">02</span>
+            <div class="project-head">
+              <span class="project-index">PROJ.02</span>
+              <span class="status status-progress">In progress</span>
             </div>
             <div class="project-body">
-              <h3>Solar MPPT Charge Controller</h3>
-              <p>Maximum-power-point-tracking charge controller that squeezes extra efficiency out of small solar panels.</p>
+              <h3>SEEDR — Reforestation Drone</h3>
+              <p>An agriculture quadcopter that drops grass seeds through a servo-actuated, 3D-printed dispensing mechanism (modeled after a flour dispenser). Remote-controlled today, with autonomous flight next on the roadmap.</p>
               <ul class="tag-row">
-                <li>Power Electronics</li><li>ESP32</li><li>Buck Converter</li>
+                <li>Pixhawk</li><li>Servo Actuation</li><li>Fusion 360</li><li>Carbon Fiber</li>
               </ul>
-              <a class="project-link" href="https://github.com/arnavdhuri1707" target="_blank" rel="noreferrer">View project <span class="arrow">→</span></a>
             </div>
           </article>
 
+          <!-- 03 -->
           <article class="project-card reveal">
-            <div class="project-media" data-tone="c">
-              <span class="project-index">03</span>
+            <div class="project-head">
+              <span class="project-index">PROJ.03</span>
+              <span class="status status-progress">In progress</span>
             </div>
             <div class="project-body">
-              <h3>Robotic Arm with Inverse Kinematics</h3>
-              <p>3D-printed 4-DOF arm driven by servo motors, with inverse-kinematics solving for smooth pick-and-place moves.</p>
+              <h3>Hand-Tracking Robotic Arm</h3>
+              <p>A robotic arm that mirrors hand movement in real time using MediaPipe vision tracking, with voice-command control in the works. Next step: 3D-printing the full arm.</p>
               <ul class="tag-row">
-                <li>Python</li><li>Fusion 360</li><li>Servos</li>
+                <li>Python</li><li>MediaPipe</li><li>Computer Vision</li><li>Servos</li>
               </ul>
-              <a class="project-link" href="https://github.com/arnavdhuri1707" target="_blank" rel="noreferrer">View project <span class="arrow">→</span></a>
             </div>
           </article>
 
+          <!-- 04 -->
           <article class="project-card reveal">
-            <div class="project-media" data-tone="d">
-              <span class="project-index">04</span>
+            <div class="project-head">
+              <span class="project-index">PROJ.04</span>
+              <span class="status status-planned">Planned</span>
             </div>
             <div class="project-body">
-              <h3>Home Energy Monitor</h3>
-              <p>Real-time energy monitoring dashboard using current transformers and a web front-end for usage insights.</p>
+              <h3>Energy Grid Simulator</h3>
+              <p>A power-grid simulator that toggles between wall-socket power, solar, and a custom piezoelectric generator I'll be building — visualizing how energy sourcing shifts across the grid.</p>
               <ul class="tag-row">
-                <li>ESP32</li><li>MQTT</li><li>JavaScript</li>
+                <li>Piezoelectric</li><li>Solar</li><li>Data Viz</li><li>Energy Systems</li>
               </ul>
-              <a class="project-link" href="https://github.com/arnavdhuri1707" target="_blank" rel="noreferrer">View project <span class="arrow">→</span></a>
             </div>
           </article>
 
@@ -153,41 +156,79 @@
       </div>
     </section>
 
-    <!-- ============ EXPERIENCE ============ -->
+    <!-- ============ EXPERIENCE & EDUCATION ============ -->
     <section class="section" id="experience">
       <div class="container">
-        <p class="section-kicker reveal">03 — Experience &amp; Education</p>
+        <p class="section-kicker reveal">03 / Experience &amp; Education</p>
         <h2 class="section-title reveal">Where I've been</h2>
+
+        <h3 class="timeline-group-title reveal">Education</h3>
         <div class="timeline">
-
-          <!-- EDIT: your real experience / education entries -->
           <div class="timeline-item reveal">
-            <div class="timeline-when">2024 — Present</div>
+            <div class="timeline-when">Present — Jun 2029</div>
             <div class="timeline-what">
-              <h3>Robotics Club — Member / Builder</h3>
-              <p class="timeline-org">School / University name</p>
-              <p>Designing and building competition robots; responsible for drivetrain design and control code.</p>
+              <h3>B.S. Mechanical Engineering — Energy Systems</h3>
+              <p class="timeline-org">Rutgers University · New Brunswick, NJ</p>
+              <p>Concentration in Energy Systems.</p>
             </div>
           </div>
 
           <div class="timeline-item reveal">
-            <div class="timeline-when">2023 — Present</div>
+            <div class="timeline-when">Sep 2022 — Jun 2025</div>
             <div class="timeline-what">
-              <h3>Engineering Student</h3>
-              <p class="timeline-org">School / University name</p>
-              <p>Focus on mechatronics, electronics, and sustainable energy systems.</p>
+              <h3>Ridge High School</h3>
+              <p class="timeline-org">Basking Ridge, NJ</p>
+              <p>GPA 4.10 / 4.00 · SAT 1500 · AP Scholar with Honors.</p>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="timeline-group-title reveal">Experience &amp; Research</h3>
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-when">Sep 2025 — Present</div>
+            <div class="timeline-what">
+              <h3>Project Lead</h3>
+              <p class="timeline-org">Students for Environmental &amp; Energy Development · Rutgers University</p>
+              <p>Directing a 6-member team designing the SEEDR quadcopter and its mechanical, electrical, and control subsystems. Managed a $1.8K budget, achieved a 1-hour flight time, and cut prototype mass by 30% while holding structural precision.</p>
             </div>
           </div>
 
           <div class="timeline-item reveal">
-            <div class="timeline-when">2023</div>
+            <div class="timeline-when">Sep 2025 — Present</div>
             <div class="timeline-what">
-              <h3>Science Fair / Competition</h3>
-              <p class="timeline-org">Event name</p>
-              <p>Presented an energy-systems project; add your award or result here.</p>
+              <h3>Class Representative · University Affairs Sub-Chair</h3>
+              <p class="timeline-org">Engineering Government Council · Rutgers University</p>
+              <p>Represent first-year students at council meetings of 100+ attendees. Led the annual Engineering Diversity Panel with 8+ campus leaders and hosted a Winter De-Stress event for 50+ students.</p>
             </div>
           </div>
 
+          <div class="timeline-item reveal">
+            <div class="timeline-when">Sep 2025 — Present</div>
+            <div class="timeline-what">
+              <h3>General Member</h3>
+              <p class="timeline-org">Rutgers Engineers Without Borders</p>
+              <p>Prototyped an architectural sketch for a school in an under-resourced town within set constraints, and worked with 10+ peers to assess feasibility and align efforts with EWB's development goals.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-when">Dec 2023 — Aug 2025</div>
+            <div class="timeline-what">
+              <h3>Outreach Manager · General Engineer</h3>
+              <p class="timeline-org">Ridge Robotics (FTC) · Basking Ridge, NJ</p>
+              <p>Organized an outreach event with the NJ Devils, demonstrating to a 5,000+ audience. Designed and built the paper-airplane launcher and claw in Autodesk Fusion, and placed Top 15 across 5 FIRST Tech Challenge tournaments with a 12+ member team.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-when">Jul 2024 — Aug 2024</div>
+            <div class="timeline-what">
+              <h3>Summer Research (GSSRP)</h3>
+              <p class="timeline-org">Kean University Summer Research Program</p>
+              <p>Modeled electromagnetically induced sympathetic vibration by discretizing PDEs into ODEs, applied spectral and temporal filtering to audio signals, and presented findings via poster to 150+ attendees.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -195,29 +236,35 @@
     <!-- ============ SKILLS ============ -->
     <section class="section section-alt" id="skills">
       <div class="container">
-        <p class="section-kicker reveal">04 — Skills</p>
+        <p class="section-kicker reveal">04 / Skills</p>
         <h2 class="section-title reveal">Toolbox</h2>
         <div class="skills-grid">
 
-          <!-- EDIT: adjust categories and items to match your real skillset -->
           <div class="skill-group reveal">
-            <h3>Hardware &amp; Fabrication</h3>
+            <h3>Technical</h3>
             <ul class="tag-row">
-              <li>Arduino</li><li>ESP32</li><li>Raspberry Pi</li><li>Soldering</li><li>3D Printing</li><li>Circuit Design</li>
+              <li>Java</li><li>Python</li><li>Arduino IDE</li><li>Circuits</li><li>3D Printing</li><li>Data Analysis</li><li>Statistics</li>
             </ul>
           </div>
 
           <div class="skill-group reveal">
-            <h3>Software</h3>
+            <h3>CAD &amp; Design</h3>
             <ul class="tag-row">
-              <li>Python</li><li>C / C++</li><li>JavaScript</li><li>Git</li><li>MATLAB</li>
+              <li>Autodesk Fusion</li><li>OnShape</li><li>SolidWorks</li>
             </ul>
           </div>
 
           <div class="skill-group reveal">
-            <h3>Design &amp; Simulation</h3>
+            <h3>Leadership &amp; Organizational</h3>
             <ul class="tag-row">
-              <li>Fusion 360</li><li>SolidWorks</li><li>KiCad</li><li>LTspice</li>
+              <li>Project Management</li><li>Team Leadership</li><li>Public Speaking</li><li>Event Planning</li><li>Diplomacy</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal">
+            <h3>Software &amp; Certifications</h3>
+            <ul class="tag-row">
+              <li>Microsoft Office Suite</li><li>Google Workspace</li><li>Lean Six Sigma Yellow Belt</li>
             </ul>
           </div>
 
@@ -228,18 +275,15 @@
     <!-- ============ CONTACT ============ -->
     <section class="section" id="contact">
       <div class="container contact-inner">
-        <p class="section-kicker reveal">05 — Contact</p>
+        <p class="section-kicker reveal">05 / Contact</p>
         <h2 class="contact-title reveal">Let's build<br />something<span class="accent">.</span></h2>
         <p class="contact-blurb reveal">
-          Open to collaborations, internships, and interesting conversations
-          about robots or energy.
+          Open to internships, collaborations, and good conversations about
+          robots, drones, or energy.
         </p>
-        <!-- EDIT: set your real email -->
-        <a class="contact-email reveal" href="mailto:sampada_dhuri@yahoo.com">sampada_dhuri@yahoo.com</a>
+        <a class="contact-email reveal" href="mailto:arnav.dhuri17@gmail.com">arnav.dhuri17@gmail.com</a>
         <div class="socials reveal">
-          <!-- EDIT: your real profile links -->
-          <a href="https://github.com/arnavdhuri1707" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://linkedin.com/in/your-username" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/arnavdhuri/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </div>
     </section>
